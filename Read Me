@@ -1,0 +1,50 @@
+Read Me
+
+A 24-game game system played with poker playing card
+Consists of:
+->	A server that handle user login, user matching, and gaming support
+->	A client that allow users to login and play games
+
+Assignment 1: RMI – handles user registration and login
+Assignment 2: JDBC – handles data storage and retrieval
+Assignment 3: JMS – handle client-server communication
+Assignment 4: Final submission – handle game logic
+
+-------------------
+Assignment 1
+-------------------
+
+In assignment 1, the server must maintain two files
+
+	UserInfo.txt – storing registered user information
+
+		Persistence across server execution
+		Used to authenticate user
+		Updated in successful user registration
+		Checked to avoid duplicating user name during registration
+
+	OnlineUser.txt – keeping a list of online users
+
+		Cleared when server start
+		Updated when user login/logout
+		Checked to avoid multiple login
+
+Note that this will be replaced by the use of database in assignment 2
+
+-------------------
+Assignment 2
+-------------------
+
+Use JDBC to store the data 
+
+-------------------
+Assignment 3
+-------------------
+
+Things to implement 
+
+	The game-play GUI (client)
+	The game-play mechanism (server + client)
+	Evaluating (and validating) answer
+
+You must use JMS to support the game-play mechanism
